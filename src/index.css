@@ -2,10 +2,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
+  background-color:#D8E1E9;
+
 }
 
+.content{
+  padding-top: 190px;
+}
 h2{
   font-family: 'Arvo', serif;
   border: 2px solid #D8E1E9;
   padding: 25px;
+}
+
+h1{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
