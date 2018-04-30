@@ -137,8 +137,10 @@
 .decorative-flower2{
   position: absolute;
   z-index: 0;
-  left: -170px;
-  top: -15px;
+  right: -170px;
+  bottom: -155px;
   width: 500px;
   transform: rotate(180deg);
 }
+
+

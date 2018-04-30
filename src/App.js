@@ -21,7 +21,6 @@ class App extends Component {
               <div className={classNames('inner-div', 'flower-div')}>
                   <img src={flower} className="decorative-flower"/>
                   <h1>Celyn Lloyd Thomas & Imogen Walker</h1>
-                  <img src={champ} className="champ-open"/>
                   <img src={flower} className="decorative-flower2"/>
               </div>
           </div>
