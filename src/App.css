@@ -82,7 +82,7 @@
 }
 
 .inner-div .entrance-text{
-  margin-top: 160px;
+  margin-top: 135px;
 }
 .App-header .inner-div{
   background-color: #D8E1E9;
@@ -170,7 +170,7 @@
 
 
 img.amp{
-  width: 60px;
+  width: 40px;
   opacity: 0.7;
   padding-bottom: 10px;
 }
@@ -211,4 +211,19 @@ p.special-heading{
   padding-left: 5px;
   padding-top: 2px;
   position: absolute;
+}
+
+nav{
+  position: absolute;
+  top: 50px;
+  left: 222px;
+}
+
+nav a{
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+nav a:hover{
+  color: #43859e;
 }

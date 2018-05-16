@@ -31,13 +31,15 @@ class App extends Component {
                   <div className="entrance-text">
                      <img src={flower} className="decorative-flower"/>
 
-                      <a href='#section-details'> Details </a>
-                      <a href='#section-location'> Location </a>
-                      <a href='#section-transport'> Transport </a>
-                      <a href='#section-accomodation'> Accomodation </a>
-                      <a href='#section-rsvp'> RSVP </a>
-                      <a href='#section-luminary'> Luminary </a>
-                      <a href='#section-thanks'> Thanks </a>
+                      <nav>
+                        <a href='#section-details'> Details </a>
+                        <a href='#section-location'> Location </a>
+                        <a href='#section-transport'> Transport </a>
+                        <a href='#section-accomodation'> Accomodation </a>
+                        <a href='#section-rsvp'> RSVP </a>
+                        <a href='#section-luminary'> Luminary </a>
+                        <a href='#section-thanks'> Thanks </a>
+                      </nav>
 
                      <h1 className="name-one">Imogen Mary Charlotte Walker</h1>
                      <br/>
