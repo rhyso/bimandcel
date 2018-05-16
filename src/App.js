@@ -40,41 +40,59 @@ class App extends Component {
               <div className="inner-div">
                 <h2>DETAILS</h2>
                   <div className="inner-content">
-                      <p>IWe’re delighted to invite you to Bim and Cel’s wedding on Saturday 15 September 2018.</p>
-                      <h3>Time & Location</h3>
-                      <p>Please arrive at 11.30 / 11.45 am for a 12 pm ceremony at the Catholic Parish of St Mary’s,
-                          Bulwark Road, Chepstow, NP16 5JE.</p>
+                      <p className="special-heading">We’re delighted to invite you to Bim and Cel’s wedding on Saturday 15 September 2018.</p>
+                      <div className="l-r-wrapper">
 
-                          <p>A reception will follow in a field near Gaerllwyd crossroads, NP16 6BA.
+                          <h3>Time & Location</h3>
+
+                          <p>Please arrive at 11.30 / 11.45 am for a 12 pm ceremony at the Catholic Parish of St Mary’s,
+                          Bulwark Road, Chepstow, NP16 5JE.
+                          <br/>
+                          A reception will follow in a field near Gaerllwyd crossroads, NP16 6BA.
                               The field will be clearly signposted and details of how to get there
                               if you’re driving are here [LINK]</p>
-
-                      <h3>Dress</h3>
+                      </div>
+                      <div className="l-r-wrapper">
+                          <h3>Dress</h3>
                           <p>We’ll be spending a lot of the day in the field so sensible(ish) shoes and warm
-                              jumpers for the evening are advised.</p>
+                              jumpers for the evening are advised.
+                          </p>
+                      </div>
 
-                      <h3>Event</h3>
+                      <div className="l-r-wrapper">
+
+                          <h3>Event</h3>
                           <p>There is no curfew (!) so you are welcome stay and celebrate as long as you like.
                               Live music will go on until around around 1 am and the bar will be open until 2 am.
                               The bar is cash only - sadly there are no ATMs in the field but there are plenty in
                               Chepstow town centre!</p>
+                      </div>
 
-                      <h3>Parking</h3>
+                      <div className="l-r-wrapper">
+
+                          <h3>Parking</h3>
                           <p>For those of you with your own cars, there is lots of free parking on the streets
                               surrounding the church so you are welcome to park there. There is also plenty of
-                              parking at the field.</p>
+                                      parking at the field.</p>
+                      </div>
 
-                      <h3>Taxi</h3>
+                      <div className="l-r-wrapper">
+
+                          <h3>Taxi</h3>
                           <p>For those of you without cars, here is a list of local taxi companies [LINK]
                               We recommend booking a taxi in advance to get you home as they tend to be busy on
-                              Saturday nights.</p>
-
-                      <p>    If you have any questions or are stuck for transport, please let us know:
-                      </p><br/>
+                              Saturday nights.<br/>
+                              If you have any questions or are stuck for transport, please let us know:
+                          </p>
+                      </div>
+                          <br/>
+                      <div className="details-contact">
                       <p>
-                          Bim: imogenmcwalker@gmail.com<br/>
+                          <b>Bim:</b> <a href="imogenmcwalker@gmail.com">imogenmcwalker@gmail.com</a><br/>
 
-                          Cel: celynthomas@gmail.com </p>
+                          <b>Cel:</b> <a href="mailto:celynthomas@gmail.com">celynthomas@gmail.com</a>
+                      </p>
+                      </div>
 
                   </div>
               </div>
@@ -86,12 +104,17 @@ class App extends Component {
                 <h2>LOCATION</h2>
                   <div className="inner-content">
 
-                      <p>To get to the field from the church:
+                      <p className="special-heading">To get to the field from the church:</p>
 
+                      <div className="l-r-wrapper">
+
+                          <h3>a.</h3>
+                          <p>
                           With the church on your left, head to the T-junction and turn left to reach the top of Chepstow (uphill from the church)
+                          </p>
 
-
-
+                      </div>
+                      <p>
                           After the Esso Petrol Station, turn right at Larkfield roundabout (4th exit). Signposted towards …...
                           Continue for about 2 mins/half a mile down the road.
 

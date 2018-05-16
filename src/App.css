@@ -35,7 +35,7 @@
 .big-div{
   padding: 30px 20px;
   margin-top: 80px;
-  height:600px;
+  height:100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,19 +55,18 @@
   /*border-right: 1px solid #B3C5D7;*/
   /*box-shadow: 2px -2px 1px 2px #F2F2F2;*/
   padding-top: 60px;
+  padding-bottom: 75px;
 }
 
 .inner-div h2{
-  width: 250px;
-  margin: 0 auto;
   margin-bottom: 50px;
 
 }
 
 .inner-div p{
-  width: 500px;
   margin: 0 auto;
   line-height: 36px;
+  text-align: justify;
 }
 
 .inner-div.flower-div{
@@ -119,11 +118,20 @@
 
 .details{
   background-color: #f8f8f8;
-  height: 1100px;
 }
 
 .details .inner-div p{
   width: 700px;
+}
+
+.details .details-contact{
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.details .details-contact p {
+  width:  auto;
 }
 
 .location{
@@ -167,12 +175,32 @@ img.amp{
 }
 
 .inner-content h3{
-  min-height: 111px;
   float: left;
   padding-left: 30px;
-  padding-right: 140px;
 }
 
 .inner-content p{
   text-align: left;
+}
+
+
+.l-r-wrapper{
+  min-width: 600px;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 75px;
+}
+.l-r-wrapper h3{
+  width: 200px;
+  text-align: left;
+  padding-left: 75px;
+  line-height: 0;
+}
+
+.details .inner-div p.special-heading,
+p.special-heading{
+  width: 400px;
+  text-align: center;
+  padding-bottom: 30px;
 }
