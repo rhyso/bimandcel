@@ -5,7 +5,10 @@
   "dependencies": {
     "google-maps-react": "^2.0.0",
     "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react-dom": "^16.3.0",
+    "mongoose": "4.0.7",
+    "promise": "7.0.3",
+    "connect-mongo": "latest"
   },
   "devDependencies": {
     "classnames": "^2.2.5",
@@ -18,3 +21,4 @@
     "eject": "react-scripts eject"
   }
 }
+
