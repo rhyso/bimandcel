@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import location from '../images/noun_location.png'
 
 export class Location extends Component {
     render() {
@@ -7,7 +8,7 @@ export class Location extends Component {
 
             <div className={classNames('big-div', 'location')}>
                 <div className="inner-div">
-                    <h2>LOCATION</h2>
+                    <h2>LOCATION<img src={location} className="section-icon"/></h2>
                     <div className="inner-content">
 
                         <p className="special-heading">To get to the field from the church:</p>

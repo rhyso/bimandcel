@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import transport from '../images/noun_transport.png'
 
 export class Transport extends Component {
     render() {
@@ -9,7 +10,7 @@ export class Transport extends Component {
 
             <div className={classNames('big-div', 'transport')}>
                 <div className="inner-div">
-                    <h2>TRANSPORT</h2>
+                    <h2>TRANSPORT<img src={transport} className="section-icon"/></h2>
                     <div className="inner-content">
 
 

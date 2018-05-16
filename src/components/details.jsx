@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import info from '../images/info_noun.png'
 
 export class Details extends Component {
     render() {
@@ -7,7 +8,7 @@ export class Details extends Component {
 
             <div className={classNames('big-div', 'details')}>
                 <div className="inner-div">
-                    <h2>DETAILS</h2>
+                    <h2>DETAILS <img src={info} className="section-icon"/></h2>
                     <div className="inner-content">
                         <p className="special-heading">We’re delighted to invite you to Bim and Cel’s wedding on Saturday 15 September 2018.</p>
                         <div className="l-r-wrapper">

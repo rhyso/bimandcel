@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import accom from '../images/noun_accom.png'
 
 export class Accomodation extends Component {
     render() {
@@ -9,7 +10,7 @@ export class Accomodation extends Component {
 
             <div className={classNames('big-div', 'accomodation')}>
                 <div className="inner-div">
-                    <h2>ACCOMODATION</h2>
+                    <h2>ACCOMODATION<img src={accom} className="section-icon"/></h2>
                     <div className="inner-content">
 
 

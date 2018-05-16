@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import luminaryIcon from '../images/noun_luminary.png'
 
 export class Luminary extends Component {
     render() {
@@ -9,7 +10,7 @@ export class Luminary extends Component {
 
             <div className={classNames('big-div', 'thanks')}>
                 <div className="inner-div">
-                    <h2>Luminary</h2>
+                    <h2>Luminary<img src={luminaryIcon} className="section-icon"/></h2>
                     <div className="inner-content">
                         <p>
                             My luminary,
