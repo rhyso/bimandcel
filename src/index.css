@@ -4,10 +4,11 @@ body {
   font-family: 'Gothic A1', sans-serif;
   background-color:#f8f8f8;
   margin-bottom: 300px;
+  min-width: 1020px;
 }
 
 .content{
-  padding-top: 190px;
+  padding-top: 150px;
 }
 h2{
   font-family: 'Arvo', serif;

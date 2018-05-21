@@ -111,7 +111,7 @@
 
 .legend .inner-div{
   background-color: white;
-  background-image: url("images/scotland.jpg");
+  background-image: url("images/celbimphoto.jpeg");
   background-size: cover;
   box-shadow: none;
 }
@@ -197,6 +197,10 @@ img.amp{
   text-align: left;
   padding-left: 75px;
   line-height: 0;
+}
+
+.location .l-r-wrapper h3{
+  width:100px;
 }
 
 .details .inner-div p.special-heading,
