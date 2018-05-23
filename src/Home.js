@@ -34,7 +34,8 @@ class App extends Component {
 
                       <nav>
                         <a href='#section-details'> Details </a>
-                        <a href='#section-location'> Location </a>
+                        <a href='#section-location'> Directions </a>
+                        <a href='#section-maps'> Maps </a>
                         <a href='#section-transport'> Transport </a>
                         <a href='#section-accomodation'> Accomodation </a>
                         <a href='#section-rsvp'> RSVP </a>
