@@ -11,6 +11,7 @@ export class RSVP extends Component {
     constructor() {
         super();
         this.state = {
+            data:[],
             error: null,
             author: '',
             text: ''

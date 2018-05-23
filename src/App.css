@@ -101,7 +101,9 @@
 
 .title-area h1{
   margin: 10px auto;
-
+}
+.title-area .inner-div {
+  padding-top: 30px;
 }
 
 .legend {
@@ -228,10 +230,21 @@ nav a{
   text-decoration: none;
   padding-right: 20px;
 }
-
-nav a:hover{
-  color: #43859e;
+a{
+  color:#43859e;
+  text-decoration: no-underline;
 }
 
+a:hover{
+  color: #548d37;
+}
+
+
+.name-one{
+  background-image: url("images/pink-seperator.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 23px;
+}
 
 .mapouter{overflow:hidden;height:500px;width:600px;}.gmap_canvas {background:none!important;height:500px;width:600px;}

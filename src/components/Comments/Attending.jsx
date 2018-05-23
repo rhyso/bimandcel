@@ -22,7 +22,6 @@ const Attending = (props) => {
                     <div className="inner-content">
                         <p className="special-heading">These are the people attending</p>
 
-                            <h3>Attending</h3>
                             { commentNodes }
                     </div>
                 </div>
