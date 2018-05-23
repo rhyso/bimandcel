@@ -11,16 +11,12 @@ export class RSVP extends Component {
     constructor() {
         super();
         this.state = {
-            data: [],
             error: null,
             author: '',
             text: ''
         };
     }
 
-    componentDidMount() {
-        this.loadCommentsFromServer();
-    }
 
     onChangeText = (e) => {
         const newState = { ...this.state };
@@ -84,16 +80,6 @@ export class RSVP extends Component {
     //     });
     // }
 
-    loadCommentsFromServer = () => {
-        // fetch returns a promise. If you are not familiar with promises, see
-        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-        fetch('/api/comments/')
-            .then(data => data.json())
-            .then((res) => {
-                if (!res.success) this.setState({ error: res.error });
-                else this.setState({ data: res.data });
-            });
-    }
 
     render() {
         return (
@@ -108,9 +94,6 @@ export class RSVP extends Component {
                         <div className="container">
                             <div className="comments">
                                 <h2>Comments:</h2>
-                                <Attending
-                                    data={this.state.data}
-                                />
                             </div>
                             <div className="form">
                                 <CommentForm
