@@ -5,6 +5,7 @@ import './App.css';
 import { Details } from './components/details.jsx';
 import { Location } from './components/location.jsx';
 import { Transport } from './components/transport.jsx';
+import { Maps } from './components/maps.jsx';
 import { Accomodation } from './components/accomodation.jsx';
 import { RSVP } from './components/rsvp.jsx';
 import { Luminary } from './components/luminary.jsx';
@@ -64,6 +65,10 @@ class App extends Component {
 
           <ScrollableAnchor id={'section-location'}>
               <Location />
+          </ScrollableAnchor>
+
+          <ScrollableAnchor id={'section-maps'}>
+              <Maps />
           </ScrollableAnchor>
 
 

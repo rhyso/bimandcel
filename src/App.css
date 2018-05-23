@@ -231,3 +231,6 @@ nav a{
 nav a:hover{
   color: #43859e;
 }
+
+
+.mapouter{overflow:hidden;height:500px;width:600px;}.gmap_canvas {background:none!important;height:500px;width:600px;}

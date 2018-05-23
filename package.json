@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "connect-mongo": "latest",
-    "google-maps-react": "^2.0.0",
     "mongoose": "4.0.7",
     "promise": "7.0.3",
     "react": "^16.3.0",
