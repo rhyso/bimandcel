@@ -33,7 +33,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run build",
+    "start": "concurrently \"client\" \"server\""
+
   },
   "proxy": "http://localhost:3005",
   "homepage" : "http://rhyso.github.io/celandbim",
