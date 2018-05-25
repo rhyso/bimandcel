@@ -35,5 +35,6 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm install && npm run build"
   },
-  "proxy": "http://localhost:3005"
+  "proxy": "http://localhost:3005",
+  "homepage" : "http://rhyso.github.io/celandbim",
 }
