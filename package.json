@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "body-parser": "~1.18.2",
+    "concurrently": "^3.5.1",
     "connect-mongo": "latest",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
@@ -34,9 +35,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm install && npm run build",
-    "start": "concurrently \"client\" \"server\""
+    "start": "concurrently --kill-others \"npm run client\" \"npm run server\""
 
   },
   "proxy": "http://localhost:3005",
-  "homepage" : "http://rhyso.github.io/celandbim",
+  "homepage": "http://rhyso.github.io/celandbim"
 }
