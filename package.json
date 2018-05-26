@@ -39,6 +39,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "start": "concurrently \"react-scripts start\" \"yarn start:server\""
-  },
-  "proxy": "http://localhost:3005"
+  }
 }
