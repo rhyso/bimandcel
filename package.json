@@ -43,6 +43,5 @@
     "eject": "react-scripts eject",
     "start": "concurrently \"react-scripts start\" \"yarn start:server\"",
     "heroku-postbuild": "yarn && yarn run build"
-  },
-  "proxy": "http://localhost:3005"
+  }
 }
