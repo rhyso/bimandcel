@@ -33,6 +33,9 @@
     "classnames": "^2.2.5",
     "react-scripts": "1.1.2"
   },
+  "engines": {
+    "node": "8.9.4"
+  },
   "scripts": {
     "start:server": "cd src && nodemon server.js --exec babel-node --presets=es2015 ",
     "build": "react-scripts build",
