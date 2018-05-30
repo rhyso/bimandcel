@@ -104,6 +104,7 @@
 }
 .title-area .inner-div {
   padding-top: 30px;
+  min-height: 450px;
 }
 
 .legend {
