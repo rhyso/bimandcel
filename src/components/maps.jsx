@@ -46,9 +46,11 @@ export class Maps extends Component {
                                     <div class="mapouter">
                                         <div class="gmap_canvas">
                                             <iframe width="600" height="500" id="gmap_canvas"
-                                                    src="https://maps.google.com/maps?q=NP16 6BA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                                    src="https://maps.google.com/maps?q=51.6693980,-2.7927920&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                                     frameborder="0" scrolling="no" marginheight="0"
                                                     marginwidth="0"></iframe>
+
+
                                         </div>
                                     </div>
                                 }
@@ -64,9 +66,9 @@ export class Maps extends Component {
                             <p>
 
                                 <ul>
-                                    <li><b><a href="https://goo.gl/maps/MDK7woyc1xG2" title="Church map">Church Map</a></b></li>
+                                    <li><b><a href="https://goo.gl/maps/MDK7woyc1xG2" target="_blank" title="Church map">Church Map</a></b></li>
 
-                                    <li><b><a href="https://goo.gl/maps/2yC6iT7aRcv" title="Event Map">Event Map link</a></b></li>
+                                    <li><b><a href="https://goo.gl/maps/zMQqDaX4dxm" target="_blank" title="Event Map">Event Map link</a></b></li>
 
                                 </ul>
 

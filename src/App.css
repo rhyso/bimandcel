@@ -232,7 +232,7 @@ nav a{
 }
 a{
   color:#43859e;
-  text-decoration: no-underline;
+  text-decoration: none;
 }
 
 a:hover{
@@ -248,3 +248,7 @@ a:hover{
 }
 
 .mapouter{overflow:hidden;height:500px;width:600px;}.gmap_canvas {background:none!important;height:500px;width:600px;}
+
+.wedding-date{
+  padding-top: 30px;
+}

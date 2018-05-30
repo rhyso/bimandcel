@@ -48,16 +48,11 @@ class App extends Component {
                      <img src={amp} className="amp"/>
                      <br/>
                      <h1 className="name-two">Celyn Lloyd Thomas</h1>
-                     <h2 className="wedding-date">15.09.2018</h2>
+                     <h3 className="wedding-date">15.09.2018</h3>
                   </div>
                   <img src={flower} className="decorative-flower2"/>
               </div>
           </div>
-          <div className={classNames('big-div', 'legend')}>
-              <div className="inner-div">
-              </div>
-          </div>
-
 
           <ScrollableAnchor id={'section-details'}>
               <Details />
@@ -87,14 +82,15 @@ class App extends Component {
               <RSVP />
           </ScrollableAnchor>
 
-          <ScrollableAnchor id={'section-luminary'}>
-              <Luminary />
-          </ScrollableAnchor>
-
 
           <ScrollableAnchor id={'section-thanks'}>
               <Thanks />
           </ScrollableAnchor>
+
+          <div className={classNames('big-div', 'legend')}>
+              <div className="inner-div">
+              </div>
+           </div>
 
         </div>
       </div>

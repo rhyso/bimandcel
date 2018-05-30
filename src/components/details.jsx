@@ -15,17 +15,17 @@ export class Details extends Component {
 
                             <h3>Time & Location</h3>
 
-                            <p>Please arrive at 11.30 / 11.45 am for a 12 pm ceremony at the Catholic Parish of St Mary’s,
+                            <p>Please arrive by 11.45am for a 12 noon ceremony at the Catholic Parish of St Mary’s,
                                 Bulwark Road, Chepstow, NP16 5JE.
                                 <br/>
                                 A reception will follow in a field near Gaerllwyd crossroads, NP16 6BA.
-                                The field will be clearly signposted and details of how to get there
+                                Don't worry, the field will be clearly signposted and details of how to get there
                                 if you’re driving are <a href='#section-location'>here</a> </p>
                         </div>
                         <div className="l-r-wrapper">
                             <h3>Dress</h3>
-                            <p>We’ll be spending a lot of the day in the field so sensible(ish) shoes and warm
-                                jumpers for the evening are advised.
+                            <p>Relaxed wedding wear. We will be spending a lot of the day in the field so sensible(ish)
+                               shoes and warm jumpers for the evening are advised
                             </p>
                         </div>
 
@@ -34,7 +34,7 @@ export class Details extends Component {
                             <h3>Event</h3>
                             <p>There is no curfew (!) so you are welcome stay and celebrate as long as you like.
                                 Live music will go on until around around 1 am and the bar will be open until 2 am.
-                                The bar is cash only - sadly there are no ATMs in the field but there are plenty in
+                                The bar is <b>cash only</b> - sadly there are no ATMs in the field but there are plenty in
                                 Chepstow town centre!</p>
                         </div>
 

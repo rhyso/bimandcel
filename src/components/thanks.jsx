@@ -9,7 +9,7 @@ export class Thanks extends Component {
 
             <div className={classNames('big-div', 'thanks')}>
                 <div className="inner-div">
-                    <h2>Thank-you!</h2>
+                    <h2>Thank you!</h2>
                     <div className="inner-content">
                         <p className="special-heading">We can't wait to see you all!</p>
                     </div>

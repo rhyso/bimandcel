@@ -20,29 +20,35 @@ export class Accomodation extends Component {
                             <p>
 
                                 <ul>
-                                    <li><b>Beaufort Hotel 2*</b> - Beaufort Square Chepstow NP16 5EP</li>
-                                    <li><b>Castle View Hotel 3*</b> - 16 Bridge Street, Chepstow NP16 5EZ</li>
-                                    <li><b>Racecourse Guest House 5*</b> - St Lawrence Road, Chepstow NP16 6BE</li>
-                                    <li><b>St Pierre Park Hotel 4*</b> - St Pierre Park, Chepstow, NP16 6YA</li>
-                                    <li><b>Stoulgrove Country House 5*</b> - Stoulgrove Lane, Chepstow NP16 7QE</li>
-                                    <li><b>Lynchgate 5*</b> - 47 Church Road, Caldicot, NP26 4HQ</li>
-                                    <li><b>Northgate House</b> - Caerwent</li>
-                                    <li><b>Coach and Horses</b> - Caerwent</li>
-                                    <li><b>The First Hurdle</b> - Chepstow</li>
-                                    <li><b>Hampton by Hilton</b> - Magor</li>
-                                    <li><b>Brooklands Motel</b> - Portskewett</li>
-                                    <li><b>The George Hotel</b> - Chepstow</li>
-                                    <li><b>The Huntsman</b> - Shirenewton</li>
-                                    <li><b>Willowbrook</b> - Pwllmeyric</li>
-                                    <li><b>47a Townhouse B&B</b> - Chepstow</li>
-                                    <li><b>Days Inn</b> - Magor</li>
+                                    <li><b><a href="http://www.beauforthotelchepstow.com/#ad-image-0" target="_blank">Beaufort Hotel 2*</a></b> - Beaufort Square Chepstow NP16 5EP</li>
+                                    <li><b><a href="https://www.booking.com/hotel/gb/castle-view.en-gb.html?aid=346025" target="_blank">Woodfield arms 3*</a></b> - 16 Bridge Street, Chepstow NP16 5EZ</li>
+                                    <li><b><a href="http://www.racecourseguesthouse.co.uk/" target="_blank">Racecourse Guest House 5*</a></b> - St Lawrence Road, Chepstow NP16 6BE</li>
+                                    <li><b><a href="https://www.marriott.co.uk/hotels/travel/cwlgs-st-pierre-marriott-hotel-and-country-club/" target="_blank">St Pierre Park Hotel 4*</a></b> - St Pierre Park, Chepstow, NP16 6YA</li>
+                                    <li><b><a href="https://www.stoulgrovebandb.com/" target="_blank">Stoulgrove Country House 5*</a></b> - Stoulgrove Lane, Chepstow NP16 7QE</li>
+                                    <li><b><a href="http://www.thelychgate.wales/" target="_blank">Lynchgate 5*</a></b> - 47 Church Road, Caldicot, NP26 4HQ</li>
+                                    <li><b><a href="http://www.northgatehousebb.co.uk/" target="_blank"> Northgate House</a></b> - Caerwent</li>
+                                    <li><b><a href="http://www.caerwent-coachandhorses.co.uk/" target="_blank"> Coach and Horses</a></b> - Caerwent</li>
+                                    <li><b><a href="http://thefirsthurdle.co.uk/" target="_blank"> The First Hurdle</a></b> - Chepstow</li>
+                                    <li><b><a href="http://hamptoninn3.hilton.com/en/hotels/united-kingdom/hampton-by-hilton-newport-east-BRSNEHX/index.html" target="_blank">
+                                        Hampton by Hilton</a></b> - Magor</li>
+                                    <li><b><a href="http://brooklands.awardspace.co.uk/" target="_blank"> Brooklands Motel</a></b> - Portskewett</li>
+                                    <li><b><a href="http://www.georgehotelchepstow.co.uk/" target="_blank"> The George Hotel</a></b> - Chepstow</li>
+                                    <li><b><a href="http://www.thehuntsmanhotel.co.uk/" target="_blank"> The Huntsman</a></b> - Shirenewton</li>
+                                    <li><b><a href="https://www.booking.com/hotel/gb/willowbrook-guesthouse.en-gb.html" target="_blank"> Willowbrook</a></b> - Pwllmeyric</li>
+                                    <li><b><a href="https://www.bedandbreakfast.eu/bed-and-breakfast/chepstow/47a-townhouse-b-b-in-chepstow/2829241/" target="_blank">
+                                        47a Townhouse B&B</a></b> - Chepstow</li>
+                                    <li><b><a href="https://www.wyndhamhotels.com/en-uk/days-inn/magor-united-kingdom/days-inn-magor/overview" target="_blank">
+                                        Days Inn</a></b> - Magor</li>
                                 </ul>
 
                             </p>
 
                         </div>
 
-                        <p className="special-heading"> There are also a selection of Air BnBs nearby</p>
+                        <p className="special-heading"> There are also a selection of &nbsp;
+                            <a href="https://www.airbnb.co.uk/s/Shirenewton/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJvXh7E4bqcUgRd6-srr2DKDg&query=Shirenewton&allow_override%5B%5D=&s_tag=MQm9jtpY"
+                               target="_blank">
+                                AirBnB's </a>nearby</p>
 
 
                     </div>
