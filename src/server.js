@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import { getSecret } from './secrets';
 import Comment from './models/comment';
+import cors from 'cors';
 
 const app = express();
 const router = express.Router();
@@ -19,7 +20,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
-
+app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -29,14 +30,14 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('/comments', (req, res) => {
+router.get('http://rhysothomas.webfactional.com/api/comments', (req, res) => {
     Comment.find((err, comments) => {
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: comments });
     });
 });
 
-router.post('/comments', (req, res) => {
+router.post('http://rhysothomas.webfactional.com/api/comments', (req, res) => {
     const comment = new Comment();
     // body parser lets us use the req.body
     const { author, text } = req.body;
