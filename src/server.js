@@ -8,7 +8,7 @@ import Comment from './models/comment';
 const app = express();
 const router = express.Router();
 
-const API_PORT = process.env.API_PORT || 3005;
+const API_PORT = process.env.API_PORT || 18321;
 
 
 // db config -- set your URI from mLab in secrets.js
