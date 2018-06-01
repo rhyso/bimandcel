@@ -10,6 +10,7 @@
     "concurrently": "^3.5.1",
     "connect-mongo": "latest",
     "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
     "debug": "~2.6.9",
     "express": "^4.15.5",
     "mongodb": "~3.0.1",
@@ -42,5 +43,5 @@
     "start": "react-scripts start",
     "heroku-postbuild": "yarn && yarn run build"
   },
-  "proxy": "http://rhysothomas.webfactional.com:3005"
+  "proxy": "http://localhost:3005"
 }

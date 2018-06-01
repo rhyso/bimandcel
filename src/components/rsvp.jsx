@@ -59,9 +59,13 @@ export class RSVP extends Component {
         const { author, text } = this.state;
         const data = [...this.state.data, { author, text, _id: Date.now().toString() }];
         this.setState({ data });
-        fetch('/api/comments', {
+        fetch('http://rhysothomas.webfactional.com/api/comments', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
             body: JSON.stringify({ author, text }),
         }).then(res => res.json()).then((res) => {
             if (!res.success) this.setState({ error: res.error.message || res.error });

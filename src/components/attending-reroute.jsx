@@ -18,7 +18,7 @@ export class AttendingReRoute extends Component {
     loadCommentsFromServer = () => {
         // fetch returns a promise. If you are not familiar with promises, see
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-        fetch('/api/comments/')
+        fetch('http://rhysothomas.webfactional.com/api/comments/')
             .then(data => data.json())
             .then((res) => {
                 if (!res.success) this.setState({ error: res.error });

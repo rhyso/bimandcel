@@ -19,7 +19,6 @@ const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-
 app.use(cors());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -30,14 +29,14 @@ router.get('/', (req, res) => {
 });
 
 
-router.get('http://rhysothomas.webfactional.com/api/comments', (req, res) => {
+router.get('/comments', (req, res) => {
     Comment.find((err, comments) => {
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true, data: comments });
     });
 });
 
-router.post('http://rhysothomas.webfactional.com/api/comments', (req, res) => {
+router.post('/comments', (req, res) => {
     const comment = new Comment();
     // body parser lets us use the req.body
     const { author, text } = req.body;
