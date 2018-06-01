@@ -1,19 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Comment from './Comment';
+import AttendItem from './AttendItem';
 import classNames from 'classnames';
 
 const Attending = (props) => {
-    const commentNodes = props.data.map(comment => (
-        <Comment
-            author={comment.author}
-            key={comment._id}
-            id={comment._id}
-            timestamp={comment.updatedAt}
-        >
-            { comment.text}
-        </Comment>
-    ));
+
+    const subjectRender = props.data.map((subject) => {
+        return (
+            <AttendItem text={subject.person} author={subject.text} />
+        );
+    });
+
+
     return (
         <div>
             <div className={classNames('big-div', 'details')}>
@@ -21,8 +20,7 @@ const Attending = (props) => {
                     <h2>ATTENDENCE LIST</h2>
                     <div className="inner-content">
                         <p className="special-heading">These are the people attending</p>
-
-                            { commentNodes }
+                        { subjectRender }
                     </div>
                 </div>
             </div>
@@ -32,7 +30,7 @@ const Attending = (props) => {
 
 Attending.propTypes = {
     data: PropTypes.arrayOf(PropTypes.shape({
-        author: PropTypes.string,
+        person: PropTypes.string,
         id: PropTypes.string,
         text: PropTypes.string,
     })),

@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // create new instance of the mongoose.schema. the schema takes an
 // object that shows the shape of your database entries.
 const CommentsSchema = new Schema({
-    author: String,
+    person: String,
     text: String,
 }, { timestamps: true });
 

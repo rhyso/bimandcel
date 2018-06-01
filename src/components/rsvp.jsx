@@ -13,7 +13,7 @@ export class RSVP extends Component {
         this.state = {
             data:[],
             error: null,
-            author: '',
+            person: '',
             text: ''
         };
     }
@@ -46,8 +46,8 @@ export class RSVP extends Component {
 
     submitComment = (e) => {
         e.preventDefault();
-        const { author, text } = this.state;
-        if (!author || !text) return;
+        const { person, text } = this.state;
+        if (!person || !text) return;
         // if (updateId) {
         //     this.submitUpdatedComment();
         // } else {
@@ -56,8 +56,8 @@ export class RSVP extends Component {
     }
 
     submitNewComment = () => {
-        const { author, text } = this.state;
-        const data = [...this.state.data, { author, text, _id: Date.now().toString() }];
+        const { person, text } = this.state;
+        const data = [...this.state.data, { person, text, _id: Date.now().toString() }];
         this.setState({ data });
         fetch('http://rhysothomas.webfactional.com/api/comments', {
             method: 'POST',
@@ -66,10 +66,10 @@ export class RSVP extends Component {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
             },
-            body: JSON.stringify({ author, text }),
+            body: JSON.stringify({ person, text }),
         }).then(res => res.json()).then((res) => {
             if (!res.success) this.setState({ error: res.error.message || res.error });
-            else this.setState({ author: '', text: '', error: null });
+            else this.setState({ person: '', text: '', error: null });
         });
     }
 
@@ -102,7 +102,7 @@ export class RSVP extends Component {
                             </div>
                             <div className="form">
                                 <CommentForm
-                                    author={this.state.author}
+                                    person={this.state.person}
                                     text={this.state.text}
                                     handleChangeText={this.onChangeText}
                                     submitComment={this.submitComment}

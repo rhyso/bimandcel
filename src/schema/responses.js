@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 Response = new mongoose.Schema({
-    name: String,
+    person: String,
     answer: Boolean,
 });
 

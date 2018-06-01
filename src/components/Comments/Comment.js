@@ -6,15 +6,15 @@ const Comment = props => (
     <div className="singleComment">
         <div className="textContent">
             <div className="singleCommentContent">
-                <h3>{props.author}</h3>
-                <ReactMarkdown source={props.children} />
+                <h3>{props.person}</h3>
+                <h3>{props.children} </h3>
             </div>
         </div>
     </div>
 );
 
 Comment.propTypes = {
-    author: PropTypes.string.isRequired,
+    person: PropTypes.string.isRequired,
     children: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
     handleUpdateComment: PropTypes.func.isRequired,
