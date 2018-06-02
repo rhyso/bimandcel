@@ -13,8 +13,9 @@ export class RSVP extends Component {
         this.state = {
             data:[],
             error: null,
+            confirm: '',
             person: '',
-            text: ''
+            food: ''
         };
     }
 
@@ -46,8 +47,8 @@ export class RSVP extends Component {
 
     submitComment = (e) => {
         e.preventDefault();
-        const { person, text } = this.state;
-        if (!person || !text) return;
+        const { person, food, confirm } = this.state;
+        if (!person || !food || !confirm) return;
         // if (updateId) {
         //     this.submitUpdatedComment();
         // } else {
@@ -56,8 +57,8 @@ export class RSVP extends Component {
     }
 
     submitNewComment = () => {
-        const { person, text } = this.state;
-        const data = [...this.state.data, { person, text, _id: Date.now().toString() }];
+        const { person, food, confirm } = this.state;
+        const data = [...this.state.data, { person, food, confirm, _id: Date.now().toString() }];
         this.setState({ data });
         fetch('http://rhysothomas.webfactional.com/api/comments', {
             method: 'POST',
@@ -66,10 +67,10 @@ export class RSVP extends Component {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
             },
-            body: JSON.stringify({ person, text }),
+            body: JSON.stringify({ person, food, confirm }),
         }).then(res => res.json()).then((res) => {
             if (!res.success) this.setState({ error: res.error.message || res.error });
-            else this.setState({ person: '', text: '', error: null });
+            else this.setState({ person: '', food: '', confirm: '', error: null });
         });
     }
 
@@ -97,13 +98,12 @@ export class RSVP extends Component {
 
 
                         <div className="container">
-                            <div className="comments">
-                                <h2>Comments:</h2>
-                            </div>
+
                             <div className="form">
                                 <CommentForm
                                     person={this.state.person}
-                                    text={this.state.text}
+                                    food={this.state.food}
+                                    confirm={this.state.confirm}
                                     handleChangeText={this.onChangeText}
                                     submitComment={this.submitComment}
                                 />

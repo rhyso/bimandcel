@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 const AttendItem = props => {
     return (
         <div>
-            <p>{props.text} - {props.author}</p> <br/>
+            <p>{props.person} - {props.food}</p> <br/>
         </div>
     );
 };
 AttendItem.propTypes = {
     person: PropTypes.string,
-    text: PropTypes.string
+    food: PropTypes.string
 }
 
 export default AttendItem

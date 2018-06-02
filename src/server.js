@@ -9,7 +9,7 @@ import cors from 'cors';
 const app = express();
 const router = express.Router();
 
-const API_PORT = process.env.API_PORT || 3005;
+const API_PORT = 18321;
 
 
 // db config -- set your URI from mLab in secrets.js
@@ -39,8 +39,8 @@ router.get('/comments', (req, res) => {
 router.post('/comments', (req, res) => {
     const comment = new Comment();
     // body parser lets us use the req.body
-    const { person, text } = req.body;
-    if (!person || !text) {
+    const { person, food, confirm } = req.body;
+    if (!person || !food) {
         // we should throw an error. we can do this check on the front end
         return res.json({
             success: false,
@@ -48,7 +48,8 @@ router.post('/comments', (req, res) => {
         });
     }
     comment.person = person;
-    comment.text = text;
+    comment.food = food;
+    comment.confirm = confirm;
     comment.save(err => {
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true });

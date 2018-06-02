@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const CommentForm = props => (
     <form onSubmit={props.submitComment}>
+        <p>Your name</p>
         <input
             type="text"
             name="person"
@@ -11,13 +12,26 @@ const CommentForm = props => (
             value={props.person}
             onChange={props.handleChangeText}
         />
+        <br/><br/>
+        <p>We will be serving lamb or vegetable tagine - please let us know your preference</p>
         <input
             type="text"
-            name="text"
-            placeholder="Say something..."
-            value={props.text}
+            name="food"
+            placeholder="Lamb or veg tagine"
+            value={props.food}
             onChange={props.handleChangeText}
         />
+        <p>Will you be able to attend?</p><br/><br/>
+        <input
+            type="radio"
+            name="confirm"
+            value={props.confirm}
+            checked /> I/we would be delighted to attend<br/>
+            <input
+                type="radio"
+                name="gender"
+                value={props.confirm} /> I am/We are unable to attend - soz <br/>
+
         <button type="submit">Submit</button>
     </form>
 );
@@ -25,13 +39,15 @@ const CommentForm = props => (
 CommentForm.propTypes = {
     submitComment: PropTypes.func.isRequired,
     handleChangeText: PropTypes.func.isRequired,
-    text: PropTypes.string,
+    food: PropTypes.string,
     person: PropTypes.string,
+    confirm: PropTypes.string,
 };
 
 CommentForm.defaultProps = {
-    text: '',
+    food: '',
     person: '',
+    confirm: '',
 };
 
 export default CommentForm;
