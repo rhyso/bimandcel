@@ -14,6 +14,8 @@ const CommentForm = props => (
         />
         <br/><br/>
         <p>We will be serving lamb or vegetable tagine - please let us know your preference</p>
+
+
         <input
             type="text"
             name="food"
@@ -23,14 +25,11 @@ const CommentForm = props => (
         />
         <p>Will you be able to attend?</p><br/><br/>
         <input
-            type="radio"
+            type="text"
             name="confirm"
             value={props.confirm}
+            onChange={props.handleChangeText}
             checked /> I/we would be delighted to attend<br/>
-            <input
-                type="radio"
-                name="gender"
-                value={props.confirm} /> I am/We are unable to attend - soz <br/>
 
         <button type="submit">Submit</button>
     </form>
