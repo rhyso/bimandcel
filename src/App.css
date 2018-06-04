@@ -117,7 +117,8 @@
   background-image: url("images/wedding_image2.jpeg");
   background-size: cover;
   box-shadow: none;
-  height:1100px;
+  width: 500px;
+  height: 500px;
 }
 
 
@@ -224,7 +225,7 @@ p.special-heading{
 nav{
   position: absolute;
   top: 50px;
-  left: 187px;
+  left: 230px;
 }
 
 nav a{

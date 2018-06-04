@@ -44,7 +44,7 @@ router.post('/comments', (req, res) => {
         // we should throw an error. we can do this check on the front end
         return res.json({
             success: false,
-            error: 'You must provide an author and comment src serv'
+            error: 'Sorry something is wrong with the form'
         });
     }
     comment.person = person;

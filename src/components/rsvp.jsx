@@ -14,6 +14,7 @@ export class RSVP extends Component {
             error: null,
             confirm: '',
             person: '',
+            formSubmitted: false,
             food: ''
         };
     }
@@ -55,6 +56,11 @@ export class RSVP extends Component {
         // }
     }
 
+    validFormSubmission()  {
+        this.setState({ person: '', food: '', confirm: '', error: null, formSubmitted: true });
+
+    }
+
     submitNewComment = () => {
         const { person, food, confirm } = this.state;
         const data = [...this.state.data, { person, food, confirm, _id: Date.now().toString() }];
@@ -69,7 +75,7 @@ export class RSVP extends Component {
             body: JSON.stringify({ person, food, confirm }),
         }).then(res => res.json()).then((res) => {
             if (!res.success) this.setState({ error: res.error.message || res.error });
-            else this.setState({ person: '', food: '', confirm: '', error: null });
+            else this.validFormSubmission()
         });
     }
 
@@ -87,35 +93,59 @@ export class RSVP extends Component {
 
 
     render() {
-        return (
 
+        let formS
+
+        let userMessage;
+        if (!this.state.formSubmitted) {
+            formS = (
+
+                <div>
+
+                    <p className="RSVP-header">Please RSVP by 16 July 2018 - thank you!</p>
+
+                    <div className="container">
+
+                         <div className="form">
+                             <CommentForm
+                                person={this.state.person}
+                                food={this.state.food}
+                                confirm={this.state.confirm}
+                                handleChangeText={this.onChangeText}
+                                submitComment={this.submitComment}
+                             />
+                            {this.state.error && <p>{this.state.error}</p>}
+                        </div>
+
+                    </div>
+                </div>
+            )
+
+        } else {
+            formS = (
+                <div>
+
+                    <div className="container">
+                        <h3 className="form-submitted"> Thanks! </h3>
+                    </div>
+
+                </div>
+            )
+        }
+
+        return (
             <div className={classNames('big-div', 'social')}>
                 <div className="inner-div">
                     <h2>RSVP<img src={rsvpLogo} alt="rsvp" className="section-icon"/></h2>
                     <div className="inner-content">
-                        <p className="RSVP-header">Please RSVP by 16 July 2018 - thank you!</p>
 
 
-                        <div className="container">
-
-                            <div className="form">
-                                <CommentForm
-                                    person={this.state.person}
-                                    food={this.state.food}
-                                    confirm={this.state.confirm}
-                                    handleChangeText={this.onChangeText}
-                                    submitComment={this.submitComment}
-                                />
-                            </div>
-                            {this.state.error && <p>{this.state.error}</p>}
-                        </div>
-
-
+                            {formS}
                     </div>
+
                 </div>
             </div>
-
-        )
+                )
     }
 }
 
