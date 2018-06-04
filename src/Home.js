@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import { Details } from './components/details.jsx';
@@ -8,7 +7,6 @@ import { Transport } from './components/transport.jsx';
 import { Maps } from './components/maps.jsx';
 import { Accomodation } from './components/accomodation.jsx';
 import { RSVP } from './components/rsvp.jsx';
-import { Luminary } from './components/luminary.jsx';
 import { Thanks } from './components/thanks.jsx';
 
 import flower from './images/flower1.png'
@@ -30,7 +28,7 @@ class App extends Component {
           <div className={classNames('big-div', 'title-area')}>
               <div className={classNames('inner-div', 'flower-div')}>
                   <div className="entrance-text">
-                     <img src={flower} className="decorative-flower"/>
+                     <img src={flower} alt="Flowers" className="decorative-flower"/>
 
                       <nav>
                         <a href='#section-details'> Details </a>
@@ -45,12 +43,12 @@ class App extends Component {
 
                      <h1 className="name-one">Imogen Mary Charlotte Walker</h1>
                      <br/>
-                     <img src={amp} className="amp"/>
+                     <img src={amp} alt="amp" className="amp"/>
                      <br/>
                      <h1 className="name-two">Celyn Lloyd Thomas</h1>
                      <h3 className="wedding-date">15.09.2018</h3>
                   </div>
-                  <img src={flower} className="decorative-flower2"/>
+                  <img src={flower} title="flowers" alt="flowers" className="decorative-flower2"/>
               </div>
           </div>
 

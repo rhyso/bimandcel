@@ -8,7 +8,7 @@ export class Location extends Component {
 
             <div className={classNames('big-div', 'location')}>
                 <div className="inner-div">
-                    <h2>DIRECTIONS<img src={location} className="section-icon"/></h2>
+                    <h2>DIRECTIONS<img src={location} alt="location" className="section-icon"/></h2>
                     <div className="inner-content">
 
                         <p className="special-heading">To get to the field from the church:</p>

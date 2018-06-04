@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import rsvpLogo from '../images/noun_rsvp.png'
 import 'whatwg-fetch';
-import Attending from './Comments/Attending';
 import CommentForm from './Comments/CommentForm';
 import '../rsvp.css';
 
@@ -92,9 +91,9 @@ export class RSVP extends Component {
 
             <div className={classNames('big-div', 'social')}>
                 <div className="inner-div">
-                    <h2>RSVP<img src={rsvpLogo} className="section-icon"/></h2>
+                    <h2>RSVP<img src={rsvpLogo} alt="rsvp" className="section-icon"/></h2>
                     <div className="inner-content">
-                        <p>To RSVP please email XXXX</p>
+                        <p className="RSVP-header">Please RSVP by 16 July 2018 - thank you!</p>
 
 
                         <div className="container">
@@ -110,9 +109,6 @@ export class RSVP extends Component {
                             </div>
                             {this.state.error && <p>{this.state.error}</p>}
                         </div>
-
-
-
 
 
                     </div>

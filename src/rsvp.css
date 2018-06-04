@@ -14,7 +14,8 @@
     border: 1px solid #c1c1c1;
     margin-right: 10px;
     flex: 3;
-    min-width: 300px;
+    min-width: 400px;
+    float: left;
 }
 
 .form input:first-child {
@@ -24,10 +25,27 @@
 .form button {
     color: #999;
     border: 1px solid #999;
+    margin-top: 20px;
+    padding: 14px 26px;
 }
 
 .form button:hover {
     cursor: pointer;
     color: #385997;
     border-color: #385997;
+}
+
+.form-group label{
+    display: block;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.form-group input{
+    padding: 5px;
+}
+
+.inner-content p.RSVP-header{
+    text-align: center;
 }

@@ -12,7 +12,7 @@ export class Maps extends Component {
 
             <div className={classNames('big-div', 'maps')}>
                 <div className="inner-div">
-                    <h2>MAPS<img src={map_icon} className="section-icon"/></h2>
+                    <h2>MAPS<img src={map_icon} alt="maps" className="section-icon"/></h2>
                     <div className="inner-content">
 
 
@@ -25,10 +25,10 @@ export class Maps extends Component {
                                 {
                                     <div class="mapouter">
                                         <div class="gmap_canvas">
-                                            <iframe width="600" height="500" id="gmap_canvas"
+                                            <iframe width="600" height="500" id="gmap_canvas" title="Church map"
                                                     src="https://maps.google.com/maps?q=NP16 5JE&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                                    frameborder="0" scrolling="no" marginheight="0"
-                                                    marginwidth="0"></iframe>
+                                                    frameBorder="0" scrolling="no" marginHeight="0"
+                                                    marginWidth="0"></iframe>
                                         </div>
                                     </div>
                                 }
@@ -45,10 +45,10 @@ export class Maps extends Component {
                                 {
                                     <div class="mapouter">
                                         <div class="gmap_canvas">
-                                            <iframe width="600" height="500" id="gmap_canvas"
+                                            <iframe width="600" height="500" id="gmap_canvas" title="Event Map"
                                                     src="https://maps.google.com/maps?q=51.6693980,-2.7927920&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                                    frameborder="0" scrolling="no" marginheight="0"
-                                                    marginwidth="0"></iframe>
+                                                    frameBorder="0" scrolling="no" marginHeight="0"
+                                                    marginWidth="0"></iframe>
 
 
                                         </div>
@@ -66,9 +66,9 @@ export class Maps extends Component {
                             <p>
 
                                 <ul>
-                                    <li><b><a href="https://goo.gl/maps/MDK7woyc1xG2" target="_blank" title="Church map">Church Map</a></b></li>
+                                    <li><b><a rel="noopener noreferrer" href="https://goo.gl/maps/MDK7woyc1xG2" target="_blank" title="Church map">Church Map</a></b></li>
 
-                                    <li><b><a href="https://goo.gl/maps/zMQqDaX4dxm" target="_blank" title="Event Map">Event Map link</a></b></li>
+                                    <li><b><a rel="noopener noreferrer" href="https://goo.gl/maps/zMQqDaX4dxm" target="_blank" title="Event Map">Event Map link</a></b></li>
 
                                 </ul>
 

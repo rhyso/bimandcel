@@ -10,7 +10,7 @@ export class Transport extends Component {
 
             <div className={classNames('big-div', 'transport')}>
                 <div className="inner-div">
-                    <h2>TRANSPORT<img src={transport} className="section-icon"/></h2>
+                    <h2>TRANSPORT<img src={transport} alt="transport" className="section-icon"/></h2>
                     <div className="inner-content">
 
 

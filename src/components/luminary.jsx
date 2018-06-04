@@ -10,7 +10,7 @@ export class Luminary extends Component {
 
             <div className={classNames('big-div', 'thanks')}>
                 <div className="inner-div">
-                    <h2>Luminary<img src={luminaryIcon} className="section-icon"/></h2>
+                    <h2>Luminary<img src={luminaryIcon} alt="luminary" className="section-icon"/></h2>
                     <div className="inner-content">
                         <p>
                             My luminary,

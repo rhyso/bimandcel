@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Comment from './Comment';
 import AttendItem from './AttendItem';
 import classNames from 'classnames';
 
