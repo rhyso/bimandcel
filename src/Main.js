@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './Home'
 import AttendingReRoute from './components/attending-reroute'
 
@@ -9,12 +9,12 @@ import AttendingReRoute from './components/attending-reroute'
 // with /roster or /schedule. The / route will only match
 // when the pathname is exactly the string "/"
 const Main = () => (
-    <main>
-        <Switch>
+    <Router>
+        <div>
             <Route exact path='/' component={Home}/>
             <Route path='/attendlist' component={AttendingReRoute}/>
-        </Switch>
-    </main>
+        </div>
+    </Router>
 )
 
 export default Main

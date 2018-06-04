@@ -69,7 +69,7 @@ export class Location extends Component {
 
                         <div className="l-r-wrapper">
 
-                            <h3>e.</h3>
+                            <h3>f.</h3>
                             <p>
 
                                 Continue on this road for 5-10 minutes until you get to Gaerllwyd. You should see the marquee in the field, or see home-made signposts.
@@ -82,7 +82,7 @@ export class Location extends Component {
 
                         <div className="l-r-wrapper">
 
-                            <h3>f.</h3>
+                            <h3>g.</h3>
                             <p>
 
                                 When you see the signs, turn right off the main road (before you reach the crossroads), down a small lane and the field is on your left.
