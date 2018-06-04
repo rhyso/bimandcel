@@ -7,7 +7,7 @@ const Attending = (props) => {
 
     const subjectRender = props.data.map((subject) => {
         return (
-            <AttendItem text={subject.person} author={subject.text} />
+            <AttendItem person={subject.person} confirm={subject.confirm} food={subject.food} />
         );
     });
 
@@ -31,7 +31,7 @@ Attending.propTypes = {
     data: PropTypes.arrayOf(PropTypes.shape({
         person: PropTypes.string,
         id: PropTypes.string,
-        text: PropTypes.string,
+        confirm: PropTypes.string,
     })),
 };
 

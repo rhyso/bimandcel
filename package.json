@@ -38,6 +38,7 @@
   },
   "scripts": {
     "start:server": "cd src && nodemon server.js --exec babel-node --presets=es2015 ",
+    "start:server:prod": " nodemon server.js --exec babel-node --presets=es2015 forever start -c --minUptime 1000 --spinSleepTime 1000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
