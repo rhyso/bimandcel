@@ -2,8 +2,12 @@
   "name": "celbim",
   "version": "0.1.0",
   "private": true,
+  "presets": [
+    "es2015"
+  ],
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
+    "babel-cli": "^6.0.0",
     "babel-preset-stage-0": "^6.24.1",
     "body-parser": "~1.18.2",
     "classnames": "^2.2.5",
@@ -44,6 +48,8 @@
     "eject": "react-scripts eject",
     "start2": "concurrently \"react-scripts start\" \"yarn start:server\"",
     "start": "react-scripts start",
+    "start5": "cd src && babel-node --presets es2015 server.js",
+    "start6": "forever start --minUptime 1000 --spinSleepTime 1000 ./src/server.js",
     "heroku-postbuild": "yarn && yarn run build"
   },
   "proxy": "http://rhysothomas.webfactional.com:18321"
