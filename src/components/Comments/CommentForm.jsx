@@ -43,6 +43,19 @@ const CommentForm = props => (
 
         </div>
 
+        <div className="l-r-wrapper">
+
+            <h3> Dietary</h3>
+
+            <div class="form-group">
+
+                <label>Please let us know if you have any other dietary requirements</label>
+                <input type="text" name="dietary" className="input-control" placeholder="" value={props.dietary} onChange={props.handleChangeText}/>
+
+            </div>
+
+        </div>
+
 
         <button type="submit">Submit</button>
     </form>
@@ -54,12 +67,14 @@ CommentForm.propTypes = {
     food: PropTypes.string,
     person: PropTypes.string,
     confirm: PropTypes.string,
+    dietary: PropTypes.string,
 };
 
 CommentForm.defaultProps = {
     food: '',
     person: '',
     confirm: '',
+    dietary: '',
 };
 
 export default CommentForm;

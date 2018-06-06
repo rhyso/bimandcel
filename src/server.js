@@ -39,8 +39,8 @@ router.get('/comments', (req, res) => {
 router.post('/comments', (req, res) => {
     const comment = new Comment();
     // body parser lets us use the req.body
-    const { person, food, confirm } = req.body;
-    if (!person || !food) {
+    const { person, food, confirm, dietary } = req.body;
+    if (!person || !confirm) {
         // we should throw an error. we can do this check on the front end
         return res.json({
             success: false,
@@ -50,6 +50,7 @@ router.post('/comments', (req, res) => {
     comment.person = person;
     comment.food = food;
     comment.confirm = confirm;
+    comment.dietary = dietary;
     comment.save(err => {
         if (err) return res.json({ success: false, error: err });
         return res.json({ success: true });

@@ -8,6 +8,7 @@ const CommentsSchema = new Schema({
     person: String,
     food: String,
     confirm: String,
+    dietary: String,
 }, { timestamps: true });
 
 // export our module to use in server.js

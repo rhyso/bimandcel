@@ -15,7 +15,8 @@ export class RSVP extends Component {
             confirm: '',
             person: '',
             formSubmitted: false,
-            food: ''
+            food: '',
+            dietary: ''
         };
     }
 
@@ -47,8 +48,8 @@ export class RSVP extends Component {
 
     submitComment = (e) => {
         e.preventDefault();
-        const { person, food, confirm } = this.state;
-        if (!person || !food || !confirm) return;
+        const { person, food, confirm, dietary } = this.state;
+        if (!person || !food || !confirm || !dietary) return;
         // if (updateId) {
         //     this.submitUpdatedComment();
         // } else {
@@ -57,13 +58,13 @@ export class RSVP extends Component {
     }
 
     validFormSubmission()  {
-        this.setState({ person: '', food: '', confirm: '', error: null, formSubmitted: true });
+        this.setState({ person: '', food: '', confirm: '', dietary: '', error: null, formSubmitted: true });
 
     }
 
     submitNewComment = () => {
-        const { person, food, confirm } = this.state;
-        const data = [...this.state.data, { person, food, confirm, _id: Date.now().toString() }];
+        const { person, food, confirm, dietary } = this.state;
+        const data = [...this.state.data, { person, food, confirm, dietary, _id: Date.now().toString() }];
         this.setState({ data });
         fetch('http://rhysothomas.webfactional.com/api/comments', {
             method: 'POST',
@@ -72,7 +73,7 @@ export class RSVP extends Component {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
             },
-            body: JSON.stringify({ person, food, confirm }),
+            body: JSON.stringify({ person, food, confirm, dietary }),
         }).then(res => res.json()).then((res) => {
             if (!res.success) this.setState({ error: res.error.message || res.error });
             else this.validFormSubmission()
@@ -111,6 +112,7 @@ export class RSVP extends Component {
                                 person={this.state.person}
                                 food={this.state.food}
                                 confirm={this.state.confirm}
+                                dietary={this.state.dietary}
                                 handleChangeText={this.onChangeText}
                                 submitComment={this.submitComment}
                              />
