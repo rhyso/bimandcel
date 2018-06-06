@@ -8,11 +8,11 @@ const CommentForm = props => (
 
         <div className="l-r-wrapper">
 
-            <h3> Your name</h3>
+            <h3> Your name(s)</h3>
 
             <div class="form-group">
 
-                <input type="text" name="person" placeholder="Your name…" value={props.person} onChange={props.handleChangeText}/>
+                <input type="text" name="person" placeholder="Your name(s)…" value={props.person} onChange={props.handleChangeText}/>
             </div>
 
         </div>
@@ -25,7 +25,7 @@ const CommentForm = props => (
 
                 <label>Will you be able to attend?</label>
 
-                <input type="text" name="confirm" placeholder="Yayyy :) or nayyyy :(" value={props.confirm} onChange={props.handleChangeText} />
+                <input type="text" name="confirm" placeholder="Yes or no" value={props.confirm} onChange={props.handleChangeText} />
 
             </div>
         </div>
