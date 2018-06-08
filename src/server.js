@@ -57,7 +57,9 @@ router.post('/comments', (req, res) => {
     });
 });
 
-
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/response-list.html'));
+});
 
 // app.get('/', function (req, res) {
 //     res.send('Hello World!');
