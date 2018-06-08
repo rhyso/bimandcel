@@ -5,6 +5,7 @@ import bodyParser from 'body-parser';
 import { getSecret } from './secrets';
 import Comment from './models/comment';
 import cors from 'cors';
+var path = require('path');
 
 const app = express();
 const router = express.Router();
