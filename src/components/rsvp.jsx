@@ -103,7 +103,10 @@ export class RSVP extends Component {
 
                 <div>
 
-                    <p className="RSVP-header">Please RSVP by 16 July 2018 - thank you!</p>
+                    <p className="RSVP-header">Please RSVP by 16 July 2018 - thank you!<br/>
+                        If you would prefer to email your RSVP then please email Imogen
+                        <a href="mailto:imogenmcwalker@gmail.com" title="imogenmcwalker@gmail.com"> by clicking here</a>
+                    </p>
 
                     <div className="container">
 

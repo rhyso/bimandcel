@@ -11,8 +11,8 @@ import AttendingReRoute from './components/attending-reroute'
 const Main = () => (
     <Router>
         <div>
-            <Route exact path='/' component={Home}/>
-            <Route path='/attendlist' component={AttendingReRoute}/>
+            <Route exact path="/" component={Home}/>
+            <Route path="/attendlist" component={AttendingReRoute}/>
         </div>
     </Router>
 )

@@ -25,10 +25,6 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-router.get('/', (req, res) => {
-    res.json({ message: 'Hello, World!' });
-});
-
 
 router.get('/comments', (req, res) => {
     Comment.find((err, comments) => {
@@ -58,7 +54,7 @@ router.post('/comments', (req, res) => {
     });
 });
 
-app.get('/', function(req, res) {
+router.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/response-list.html'));
 });
 

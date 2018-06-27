@@ -8,7 +8,7 @@ const CommentForm = props => (
 
         <div className="l-r-wrapper">
 
-            <h3> Your name(s)</h3>
+            <h3> Your name(s) <span className="required-field">*</span></h3>
 
             <div class="form-group">
 
@@ -19,7 +19,7 @@ const CommentForm = props => (
 
         <div className="l-r-wrapper">
 
-            <h3> Attendance</h3>
+            <h3> Attendance <span className="required-field">*</span></h3>
 
             <div class="form-group">
 
@@ -32,7 +32,7 @@ const CommentForm = props => (
 
         <div className="l-r-wrapper">
 
-            <h3> Food</h3>
+            <h3> Food <span className="required-field">*</span></h3>
 
             <div class="form-group">
 
@@ -45,11 +45,11 @@ const CommentForm = props => (
 
         <div className="l-r-wrapper">
 
-            <h3> Dietary</h3>
+            <h3> Dietary <span className="required-field">*</span></h3>
 
             <div class="form-group">
 
-                <label>Please let us know if you have any other dietary requirements</label>
+                <label>Please let us know if you have any dietary requirements</label>
                 <input type="text" name="dietary" className="input-control" placeholder="" value={props.dietary} onChange={props.handleChangeText}/>
 
             </div>

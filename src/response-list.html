@@ -5,6 +5,40 @@
     <title>title</title>
 </head>
 <body>
-    rsvp list here
+
+    <a href="#" id="get-data">Show the RSVP list</a>
+    <div id="show-data"></div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#get-data').click(function () {
+                var showData = $('#show-data');
+
+                $.getJSON('/api/comments', function (data) {
+                    console.log(data);
+                    let rsvp = data.data
+                    var items = rsvp.map(function (person, index) {
+                        console.log(person.person)
+                        return '<h3>'+index+'</h3> ' +person.person + '<br/><b>Can they go:</b> ' + person.confirm + '<br/><b>Food Choice:</b> ' + person.food + '<br/><b>Dietary Reqs:</b> ' + person.dietary;
+                    });
+
+                    showData.empty();
+
+                    if (items.length) {
+
+
+                        var content = '<li>' + items.join('</li><li>') + '</li>';
+                        var list = $('<ul />').html(content);
+                        showData.append(list);
+                    }
+                });
+
+                showData.text('Loading the RSVPs.');
+            });
+        });
+
+
+    </script>
+
 </body>
 </html>

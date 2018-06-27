@@ -254,3 +254,7 @@ a:hover{
 .wedding-date{
   padding-top: 30px;
 }
+
+.required-field{
+  color:red;
+}
