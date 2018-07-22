@@ -12,9 +12,13 @@ const router = express.Router();
 
 const API_PORT = 18321;
 
+var options = {
+    server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
+    replset: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }
+};
 
 // db config -- set your URI from mLab in secrets.js
-mongoose.connect(getSecret('dbUri'));
+mongoose.connect(getSecret('dbUri'),options);
 
 const db = mongoose.connection;
 
