@@ -31,7 +31,7 @@ export class Updates extends Component {
                                 <h3>1.</h3>
                                 <p>
 
-                                    Bring cash with you for the bar
+                                    Bring cash with you for the bar.
 
                                 </p>
 
@@ -68,7 +68,7 @@ export class Updates extends Component {
                                     there will be free mixers at the bar so feel free to bring a spirit if you wish.
                                     <br />
                                     <br />
-                                    Have also added some more information about <a href='#section-camping' className="camping-content-link"> camping here </a>
+                                    We have also added some more information about <a href='#section-camping' className="camping-content-link"> camping here. </a>
                                 </p>
 
                             </div>
