@@ -6,6 +6,8 @@ import { Location } from './components/location.jsx';
 import { Transport } from './components/transport.jsx';
 import { Maps } from './components/maps.jsx';
 import { Accomodation } from './components/accomodation.jsx';
+import { Camping } from './components/camping.jsx';
+import { Updates } from './components/updates.jsx';
 import { RSVP } from './components/rsvp.jsx';
 import { Thanks } from './components/thanks.jsx';
 
@@ -36,6 +38,7 @@ class App extends Component {
                         <a href='#section-maps'> Maps </a>
                         <a href='#section-transport'> Transport </a>
                         <a href='#section-accomodation'> Accomodation </a>
+                        <a href='#section-camping'> Camping </a>
                         <a href='#section-rsvp'> RSVP </a>
                         <a href='#section-thanks'> Thanks </a>
                       </nav>
@@ -50,6 +53,8 @@ class App extends Component {
                   <img src={flower} title="flowers" alt="flowers" className="decorative-flower2"/>
               </div>
           </div>
+
+          <Updates />
 
           <ScrollableAnchor id={'section-details'}>
               <Details />
@@ -72,6 +77,10 @@ class App extends Component {
 
           <ScrollableAnchor id={'section-accomodation'}>
               <Accomodation />
+          </ScrollableAnchor>
+
+          <ScrollableAnchor id={'section-camping'}>
+              <Camping />
           </ScrollableAnchor>
 
 
