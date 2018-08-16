@@ -55,13 +55,23 @@ export class Updates extends Component {
                                     <h3>3.</h3>
                                     <p>
                                             Bring a warm jumper in case it gets chilly in the evening and a brolly if it looks like rain.
-                                            The bar in the field won't be stocking any spirits (although there will be lots of beer, wine and cider!)
-                                            there will be free mixers at the bar so feel free to bring a spirit if you wish.
-                                    <br />
-                                        <br />
-                                    Have also added some more information about <a href='#section-camping'> camping here </a></p>
+                                    </p>
+
 
                              </div>
+
+                            <div className="l-r-wrapper">
+                                <h3>4. </h3>
+                                <p>
+
+                                    The bar in the field won't be stocking any spirits (although there will be lots of beer, wine and cider!)
+                                    there will be free mixers at the bar so feel free to bring a spirit if you wish.
+                                    <br />
+                                    <br />
+                                    Have also added some more information about <a href='#section-camping' className="camping-content-link"> camping here </a>
+                                </p>
+
+                            </div>
 
                     </div>
                 </div>

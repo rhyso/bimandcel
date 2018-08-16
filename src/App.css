@@ -57,6 +57,11 @@
   padding-right: 180px;
 }
 
+a.camping-content-link {
+  color: #dc2926;
+  font-weight: bold;
+}
+
 .inner-div{
   background-color:white;
   width:1000px;
