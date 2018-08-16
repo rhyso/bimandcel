@@ -17,16 +17,25 @@ export class Updates extends Component {
                         <p className="special-heading"> <h3>WE'RE NEARLY GETTING MARRIED!</h3></p>
 
                             <div className="l-r-wrapper">
-                                    <h3>1.</h3>
+                                    <h3></h3>
                                     <p>
 
                                         We are so excited to see you all. Here are a couple of reminders ahead of the day:
-                                         Bring cash with you for the bar
 
                                     </p>
 
                             </div>
 
+
+                            <div className="l-r-wrapper">
+                                <h3>1.</h3>
+                                <p>
+
+                                    Bring cash with you for the bar
+
+                                </p>
+
+                            </div>
 
                             <div className="l-r-wrapper">
                                     <h3>2. </h3>
