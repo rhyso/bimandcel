@@ -48,6 +48,15 @@
   position: relative;
 }
 
+
+.big-div.updates .inner-div .special-heading{
+  width: 350px;
+}
+
+.big-div.updates .inner-div .l-r-wrapper{
+  padding-right: 180px;
+}
+
 .inner-div{
   background-color:white;
   width:1000px;
@@ -276,7 +285,7 @@ a:hover{
   text-align: right;
 }
 .ribbon span {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   color: #FFF;
   text-transform: uppercase;
